@@ -43,15 +43,16 @@ function Checkout() {
       <div className="checkout-page">
         {message && <p>{message}</p>}
         {product && (
-          <>
+          <div className="checkout-page">
             <h2>You are about to make an order with the following product:</h2>
             <div className="checkout-page__product">
               <h3>Title: {product.title}</h3>
+              <img className="checkout-page__img" src={product.imageUrl}/>
             </div>
-            <button onClick={() => createOrder()}>
+            <button className="checkout-page__btn" onClick={() => createOrder()}>
               Create Order (with customer set in code)
             </button>
-          </>
+          </div>
         )}
       </div>
     </Page>

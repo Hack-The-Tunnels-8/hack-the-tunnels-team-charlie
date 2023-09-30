@@ -1,0 +1,22 @@
+.product-page {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+
+
+    &__title {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    &__img {
+        width: 300px;
+    }
+
+    &__btn {
+        background-color: white;
+        border: solid 2px black;
+        border-radius: 10px;
+        padding: 15px;
+        font-size: 1.75rem;
+    }
+}

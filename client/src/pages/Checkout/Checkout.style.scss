@@ -1,0 +1,17 @@
+.checkout-page {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+
+    &__btn {
+        background-color: white;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 10px;
+        font-size: 1rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
+
+.checkout-page__img {
+    width: 300px;
+}
