@@ -6,8 +6,33 @@
   }
 
   &__header {
+    font-family: 'sans-serif', sans-serif;
     animation: colorChange 20s infinite alternate;
   }
+
+  body {
+    background-color: rgb(20, 212, 255);
+    color: #333;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .home-page { 
+      &__title {
+        color :#ffffff;
+        background-color: #222;
+      }
+      &__header {
+        color: #ff9900;
+      }
+
+      body {
+        background-color: #021a4d;
+        color: #ffffff;
+      }
+
+    }
+  }
+ 
 
   @keyframes fadeIn{
     0% {
@@ -85,4 +110,8 @@
       font-family: 'sans-serif', sans-serif;
     }
   }
+
+
+
+
 }
