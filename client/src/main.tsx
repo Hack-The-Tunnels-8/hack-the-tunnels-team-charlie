@@ -45,12 +45,8 @@ const router = createBrowserRouter([
     element: <CreateProduct />,
   },
   {
-    path: "/admin/error404",
-    element: <Error404Page />,
-  },
-  {
     path: "*",
-    element: <div>404</div>,
+    element: <Error404Page />,
   },
 ]);
 
