@@ -31,7 +31,7 @@ function Home() {
                 imageUrl={product.imageUrl}
                 key={`${product.id}`}
               />
-              <p>Hello World!</p>
+              <p>Buy now huge sale!!!</p>
             </Link>
           ))}
         </div>
