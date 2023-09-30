@@ -1,6 +1,67 @@
 .home-page {
   &__title {
-    color: red;
+    color: blue;
+    font-family: 'sans-serif', sans-serif;
+    animation: fadeIn 3s ease-in-out;
+  }
+
+  &__header {
+    animation: colorChange 20s infinite alternate;
+  }
+
+  @keyframes fadeIn{
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes colorChange {
+    0% {
+      color: blue;
+    }
+
+    10% {
+      color: purple;
+    }
+    
+    20% {
+      color: green;
+    }
+    
+    30% {
+      color: orange;
+    }
+    
+    40% {
+      color: red;
+    }
+    
+    50% {
+      color: gray;
+    }
+    
+    60% { 
+      color: purple;
+    }
+    
+    70% {
+      color: lightblue;
+    }
+
+    80% {
+      color: yellow;
+    }
+    
+    90% {
+      color: aqua;
+    }
+    
+    100% {
+      color: pink;
+    }
   }
 
   &__products {
