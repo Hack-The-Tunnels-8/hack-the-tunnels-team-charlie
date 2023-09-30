@@ -30,12 +30,13 @@ function Product() {
         {product && (
           <>
             <div className="product-page__product">
-              <h3>Title: {product.title}</h3>
-              <p>ID: {id}</p>
-              <p>Description: {product.description}</p>
+              <h3 className="product-page__title">Title: {product.title}</h3>
+              <img className="product-page__img" src={product.imageUrl}/>
+              <p className="product-page__id">ID: {id}</p>
+              <p className="product-page__description">Description: {product.description}</p>
             </div>
             <Link to={`/checkout/${product.id}`}>
-              <button>Buy Now</button>
+              <button className="product-page__btn">Buy Now</button>
             </Link>
           </>
         )}
