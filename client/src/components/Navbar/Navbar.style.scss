@@ -2,4 +2,53 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  background-color: black;
+  height: 70px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.navbar-logo {
+  width: 50px;
+  padding: 20px;
+}
+
+.navbar-btns {
+  padding: 20px;
+  display: flex;
+}
+
+.signup-btn {
+  background-color: black;
+  border-radius: 5px;
+  border: none;
+  color: #FFE8D3;
+  width: 100px;
+  padding: 10px;
+  font-size: 1rem;
+  display: block;
+}
+
+.login-btn {
+  background-color: black;
+  border-radius: 5px;
+  border: none;
+  color: #FFE8D3;
+  width: 60px;
+  padding: 10px;
+  margin-left: 20px;
+  font-size: 1rem;
+  //display: block;
+}
+
+.logout-btn {
+  background-color: black;
+  border-radius: 5px;
+  border: none;
+  color: #FFE8D3;
+  width: 80px;
+  padding: 10px;
+  margin-left: 50px;
+  font-size: 1rem;
 }

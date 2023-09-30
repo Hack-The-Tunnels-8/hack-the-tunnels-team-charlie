@@ -9,17 +9,17 @@ function Navbar() {
 
   return (
     <div className="navbar">
-      <div className="navbar__logo">
-        <Link to="/">Store Logo</Link>
-      </div>
+        <img className="navbar-logo" src="charlie.PNG"/>
       <div className="navbar__account">
         {loggedIn() === false ? (
-          <>
-            <button onClick={() => navigate("/sign-up")}>Sign Up</button>
-            <button onClick={() => navigate("/login")}>Login</button>
-          </>
+          <div className="navbar-btns">
+            <button className="signup-btn" onClick={() => navigate("/sign-up")}>Sign Up</button>
+            <button className="login-btn" onClick={() => navigate("/login")}>Login</button>
+          </div>
         ) : (
-          <button onClick={() => logout()}>Logout</button>
+          <div className="navbar-btns">
+            <button className="logout-btn" onClick={() => logout()}>Logout</button>
+          </div>
         )}
       </div>
     </div>
