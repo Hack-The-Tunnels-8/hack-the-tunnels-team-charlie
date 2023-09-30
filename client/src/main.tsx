@@ -6,6 +6,7 @@ import {
   Admin,
   Checkout,
   CreateProduct,
+  Error404Page,
   Home,
   Login,
   Product,
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
   {
     path: "/admin/create-product",
     element: <CreateProduct />,
+  },
+  {
+    path: "/admin/error404",
+    element: <Error404Page />,
   },
   {
     path: "*",
